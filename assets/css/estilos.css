@@ -33,3 +33,55 @@ button {
   font-size: 1.2rem;
   color: #2a7f62;
 }
+
+.cabecera-sitio,
+.menu,
+.grilla-tarjetas {
+  display: flex;
+  gap: 1rem;
+}
+
+.cabecera-sitio {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+}
+
+.marca,
+.menu a,
+.pie-sitio a {
+  color: inherit;
+}
+
+main {
+  max-width: 70rem;
+  margin-inline: auto;
+}
+
+.grilla-tarjetas {
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  flex: 1 1 18rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.salto-contenido {
+  position: absolute;
+  left: -10000px;
+}
+
+.salto-contenido:focus {
+  position: static;
+}
