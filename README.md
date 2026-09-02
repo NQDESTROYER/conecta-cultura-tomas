@@ -53,6 +53,15 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Funciones que calculan cupos y determinan el estado.
 - Arreglos de actividades y recorrido con for...of.
 
+### Guía 7 - DOM, eventos y cartelera dinámica
+
+- Menú hamburguesa accesible en pantallas pequeñas (menu.js).
+- Selección de elementos con querySelector y eventos con addEventListener.
+- Cartelera generada desde un arreglo de objetos con createElement.
+- textContent y classList para actualizar contenido y estilos.
+- Filtros "Todas" y "Con cupos" sobre las actividades.
+- Estados de cupos críticos y actividad completa.
+
 ## Imágenes
 
 | Archivo | Descripción |

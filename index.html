@@ -11,15 +11,22 @@
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
   <header class="cabecera-sitio">
     <a class="marca" href="index.html">Conecta Cultura</a>
-    <nav aria-label="Navegación principal">
-      <ul class="menu">
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="participar.html">Participar</a></li>
-        <li><a href="recursos.html">Recursos</a></li>
-      </ul>
+    <button
+      id="boton-menu"
+      class="boton-menu"
+      type="button"
+      aria-label="Abrir o cerrar menú principal"
+      aria-controls="menu-principal"
+      aria-expanded="false">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="participar.html">Participar</a>
+      <a href="recursos.html">Recursos</a>
     </nav>
   </header>
   <main id="contenido-principal">
@@ -29,37 +36,21 @@
       <p>Descubre talleres locales de cultura, tecnología y bienestar.</p>
       <a class="boton" href="noticias.html">Explorar novedades</a>
     </section>
-    <section aria-labelledby="titulo-actividades">
-      <h2 id="titulo-actividades">Actividades destacadas</h2>
-      <div class="grilla-tarjetas">
-        <article class="tarjeta">
-          <img src="assets/img/fotografia.jpg" alt="Participantes fotografiando edificios del barrio">
-          <h3>Fotografía urbana</h3>
-          <p>Aprende composición mientras documentas tu entorno.</p>
-          <a href="noticia-detalle-1.html">Conocer el taller</a>
-        </article>
-        <article class="tarjeta">
-          <img src="assets/img/huerto.webp" alt="Personas sembrando plantas en un huerto comunitario">
-          <h3>Huerto comunitario</h3>
-          <p>Comparte técnicas de cultivo y cuida un espacio común.</p>
-          <a href="noticia-detalle-2.html">Conocer el huerto</a>
-        </article>
-        <article class="tarjeta">
-          <img src="assets/img/programacion.webp" alt="Estudiantes practicando programación en computadores">
-          <h3>Programación creativa</h3>
-          <p>Iníciate en el desarrollo de pequeños proyectos digitales.</p>
-          <a href="noticia-detalle-1.html">Conocer el taller</a>
-        </article>
+
+    <section aria-labelledby="titulo-cartelera">
+      <h2 id="titulo-cartelera">Agenda cultural</h2>
+      <p>Explora las actividades disponibles y filtra según tus intereses.</p>
+      <div class="filtros">
+        <button id="mostrar-todas" type="button">Todas</button>
+        <button id="mostrar-disponibles" type="button">Con cupos</button>
       </div>
+      <div id="cartelera" class="grilla-tarjetas"></div>
     </section>
-    <aside aria-labelledby="titulo-propuesta">
-      <h2 id="titulo-propuesta">¿Tienes una propuesta?</h2>
-      <p>Comparte una idea de actividad para tu comunidad.</p>
-    </aside>
   </main>
   <footer class="pie-sitio">
     <p>Proyecto académico · Desarrollo FullStack II</p>
   </footer>
+  <script src="assets/js/menu.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

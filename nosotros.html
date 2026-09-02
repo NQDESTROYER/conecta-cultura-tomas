@@ -11,15 +11,22 @@
   <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
   <header class="cabecera-sitio">
     <a class="marca" href="index.html">Conecta Cultura</a>
-    <nav aria-label="Navegación principal">
-      <ul class="menu">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html" aria-current="page">Nosotros</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="agenda.html">Agenda</a></li>
-        <li><a href="participar.html">Participar</a></li>
-        <li><a href="recursos.html">Recursos</a></li>
-      </ul>
+    <button
+      id="boton-menu"
+      class="boton-menu"
+      type="button"
+      aria-label="Abrir o cerrar menú principal"
+      aria-controls="menu-principal"
+      aria-expanded="false">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="participar.html">Participar</a>
+      <a href="recursos.html">Recursos</a>
     </nav>
   </header>
   <main id="contenido-principal">
@@ -52,6 +59,7 @@
   <footer class="pie-sitio">
     <p>Proyecto académico · Desarrollo FullStack II</p>
   </footer>
+  <script src="assets/js/menu.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>
