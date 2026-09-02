@@ -28,6 +28,14 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Página de confirmación posteriores al envío.
 - Recursos multimedia con video, audio y subtítulos.
 
+### Guía 4 - Identidad visual y CSS
+
+- Hoja de estilos organizada por secciones con variables CSS.
+- Sistema de colores, tipografía, radios y sombras reutilizables.
+- Modelo de caja con box-sizing: border-box.
+- Componentes reutilizables: .tarjeta, .boton, .etiqueta.
+- Estados interactivos y foco visible con :focus-visible.
+
 ## Imágenes
 
 | Archivo | Descripción |
