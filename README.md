@@ -44,6 +44,15 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Media queries a 48rem y 64rem.
 - Video, iframe y tabla sin desbordamiento horizontal.
 
+### Guía 6 - Fundamentos de JavaScript
+
+- Archivo app.js enlazado y ejecutándose en la consola.
+- Variables con const y let, tipos string, number y boolean.
+- Operadores aritméticos, comparación y template literals.
+- Condicionales if, else if y else.
+- Funciones que calculan cupos y determinan el estado.
+- Arreglos de actividades y recorrido con for...of.
+
 ## Imágenes
 
 | Archivo | Descripción |
