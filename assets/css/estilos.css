@@ -58,7 +58,8 @@ a {
 
 /* 3. Estructura */
 main {
-  width: min(100% - 2rem, var(--ancho-contenido));
+  width: 90%;
+  max-width: 70rem;
   margin-inline: auto;
   padding-block: 2rem 4rem;
 }
@@ -76,6 +77,9 @@ section + section {
 
 /* 4. Navegación */
 .cabecera-sitio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem 5%;
   color: #ffffff;
   background: var(--color-primario-oscuro);
@@ -90,9 +94,9 @@ section + section {
 
 .menu {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.5rem;
-  margin: 1rem 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -183,6 +187,12 @@ button:hover {
   margin-bottom: 0.25rem;
 }
 
+.grilla-tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
 /* 6. Tablas y formularios */
 .tabla-contenedor {
   max-width: 100%;
@@ -242,9 +252,19 @@ thead {
 
 /* 7. Multimedia y utilidades */
 video,
-audio,
 iframe {
+  width: 100%;
+  max-width: 100%;
   height: auto;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+audio {
+  max-width: 100%;
 }
 
 .encabezado-pagina {
@@ -267,4 +287,28 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: var(--color-primario);
+}
+
+/* 9. Diseño adaptable */
+@media (min-width: 48rem) {
+  .cabecera-sitio {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .grilla-tarjetas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 64rem) {
+  .grilla-tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

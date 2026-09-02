@@ -36,6 +36,14 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Componentes reutilizables: .tarjeta, .boton, .etiqueta.
 - Estados interactivos y foco visible con :focus-visible.
 
+### Guía 5 - Diseño adaptable
+
+- Enfoque mobile first: una columna en pantallas estrechas.
+- Flexbox para reorganizar cabecera y menú.
+- CSS Grid para distribuir tarjetas en 1, 2 y 3 columnas.
+- Media queries a 48rem y 64rem.
+- Video, iframe y tabla sin desbordamiento horizontal.
+
 ## Imágenes
 
 | Archivo | Descripción |
