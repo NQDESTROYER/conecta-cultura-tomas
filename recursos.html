@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recursos multimedia para conocer el proyecto Conecta Cultura">
+  <title>Recursos | Conecta Cultura</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+  <header class="cabecera-sitio">
+    <a class="marca" href="index.html">Conecta Cultura</a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="participar.html">Participar</a></li>
+        <li><a href="recursos.html" aria-current="page">Recursos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="contenido-principal">
+    <header class="encabezado-pagina">
+      <p class="etiqueta">Contenido multimedia</p>
+      <h1>Recursos para conocernos</h1>
+      <p>Videos, audios y presentaciones del proyecto.</p>
+    </header>
+    <section aria-labelledby="titulo-video">
+      <h2 id="titulo-video">Conoce el proyecto</h2>
+      <p>Mirá la siguiente presentación para descubrir cómo trabajamos en comunidad.</p>
+      <figure>
+        <video controls preload="metadata" poster="assets/img/fotografia.jpg">
+          <source src="assets/media/presentacion.mp4" type="video/mp4">
+          <track src="assets/media/presentacion-es.vtt" kind="captions" srclang="es" label="Español" default>
+          Tu navegador no puede reproducir el video.
+          <a href="assets/media/presentacion.mp4">Descargar video</a>
+        </video>
+        <figcaption>Presentación del proyecto Conecta Cultura.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="titulo-audio">
+      <h2 id="titulo-audio">Audio de bienvenida</h2>
+      <audio controls preload="metadata">
+        <source src="assets/media/bienvenida.mp3" type="audio/mpeg">
+        Tu navegador no puede reproducir el audio.
+        <a href="assets/media/bienvenida.mp3">Descargar audio</a>
+      </audio>
+      <p>Una breve bienvenida para conocer la propuesta de Conecta Cultura.</p>
+    </section>
+  </main>
+  <footer class="pie-sitio">
+    <p>Proyecto académico · Desarrollo FullStack II</p>
+  </footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

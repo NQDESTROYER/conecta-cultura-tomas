@@ -21,6 +21,13 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Navegación con rutas relativas y `aria-current` para la página activa.
 - Imágenes locales con texto alternativo y `figure`/`figcaption`.
 
+### Guía 3 - Tablas, formularios y multimedia
+
+- Página Agenda con tabla semántica (caption, thead, tbody, th, td, scope).
+- Formulario de participación con validaciones HTML nativas.
+- Página de confirmación posteriores al envío.
+- Recursos multimedia con video, audio y subtítulos.
+
 ## Imágenes
 
 | Archivo | Descripción |
@@ -29,7 +36,7 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 | `assets/img/huerto.jpg` | Huerto comunitario |
 | `assets/img/programacion.jpg` | Programación creativa |
 
-*Falta registrar el autor y la fuente de cada imagen.*
+*Falta registrar el autor y la fuente de cada imagen y archivo multimedia.*
 
 ## Ejecución
 
