@@ -33,8 +33,8 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 | Archivo | Descripción |
 |---------|-------------|
 | `assets/img/fotografia.jpg` | Taller de fotografía urbana |
-| `assets/img/huerto.jpg` | Huerto comunitario |
-| `assets/img/programacion.jpg` | Programación creativa |
+| `assets/img/huerto.webp` | Huerto comunitario |
+| `assets/img/programacion.webp` | Programación creativa |
 
 *Falta registrar el autor y la fuente de cada imagen y archivo multimedia.*
 
