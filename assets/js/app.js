@@ -26,3 +26,30 @@ const estado = obtenerEstado(cuposDisponibles);
 console.log(`Actividad: ${nombreActividad}`);
 console.log(`Cupos disponibles: ${cuposDisponibles}`);
 console.log(`Estado: ${estado}`);
+
+// ===== Trabajo autónomo =====
+// Segunda actividad para probar el estado "Últimos cupos"
+const nombreActividad2 = "Huerto comunitario";
+const capacidad2 = 20;
+const inscritos2 = 17;
+
+const cuposActividad2 = calcularCupos(capacidad2, inscritos2);
+const estadoActividad2 = obtenerEstado(cuposActividad2);
+
+console.log(`Actividad: ${nombreActividad2}`);
+console.log(`Cupos disponibles: ${cuposActividad2}`);
+console.log(`Estado: ${estadoActividad2}`);
+
+// Arreglo con actividades y recorrido con for...of
+const actividades = [
+  "Taller de fotografía",
+  "Huerto comunitario",
+  "Programación creativa",
+  "Taller de guitarra"
+];
+
+console.log(`La agenda contiene ${actividades.length} actividades`);
+
+for (const actividad of actividades) {
+  console.log(actividad);
+}
