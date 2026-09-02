@@ -1,0 +1,17 @@
+# Conecta Cultura
+
+Proyecto incremental de la asignatura Desarrollo FullStack II.
+
+## Primera etapa
+
+- Estructura HTML inicial.
+- Hoja de estilos externa.
+- Archivo JavaScript enlazado.
+
+## Integrante
+
+- NQDESTROYER (youngbarbersss@gmail.com)
+
+## Ejecución
+
+Abrir `index.html` en el navegador o utilizar Live Server.
