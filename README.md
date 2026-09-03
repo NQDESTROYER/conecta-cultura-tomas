@@ -62,6 +62,15 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 - Filtros "Todas" y "Con cupos" sobre las actividades.
 - Estados de cupos críticos y actividad completa.
 
+### Guía 8 - Validación y persistencia
+
+- Formulario de registro con mensajes de error accesibles.
+- Evento submit controlado con preventDefault().
+- Validación de RUT chileno, correo, contraseña, fecha y nombre.
+- Validación en tiempo real con blur e input.
+- Persistencia del registro válido en localStorage con JSON.
+- Recuperación del último registro al recargar la página.
+
 ## Imágenes
 
 | Archivo | Descripción |

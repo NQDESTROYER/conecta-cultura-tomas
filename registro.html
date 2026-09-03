@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registro de usuario en Conecta Cultura">
+  <title>Registro | Conecta Cultura</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido-principal">Ir al contenido</a>
+  <header class="cabecera-sitio">
+    <a class="marca" href="index.html">Conecta Cultura</a>
+    <button
+      id="boton-menu"
+      class="boton-menu"
+      type="button"
+      aria-label="Abrir o cerrar menú principal"
+      aria-controls="menu-principal"
+      aria-expanded="false">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="menu-principal" class="menu" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="participar.html">Participar</a>
+      <a href="recursos.html">Recursos</a>
+    </nav>
+  </header>
+  <main id="contenido-principal">
+    <header class="encabezado-pagina">
+      <p class="etiqueta">Crea tu cuenta</p>
+      <h1>Formulario de registro</h1>
+      <p>Completa tus datos para participar en la comunidad.</p>
+    </header>
+    <form id="formulario-registro" class="formulario" novalidate>
+      <div class="campo-formulario">
+        <label for="rut">RUT sin puntos ni guion</label>
+        <input id="rut" name="rut" type="text" maxlength="9" aria-describedby="error-rut">
+        <small id="error-rut" class="mensaje-error"></small>
+      </div>
+      <div class="campo-formulario">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" maxlength="50" aria-describedby="error-nombre">
+        <small id="error-nombre" class="mensaje-error"></small>
+      </div>
+      <div class="campo-formulario">
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" aria-describedby="error-correo">
+        <small id="error-correo" class="mensaje-error"></small>
+      </div>
+      <div class="campo-formulario">
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+        <input id="fecha-nacimiento" name="fechaNacimiento" type="date" aria-describedby="error-fecha">
+        <small id="error-fecha" class="mensaje-error"></small>
+      </div>
+      <div class="campo-formulario">
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" name="contrasena" type="password" aria-describedby="error-contrasena">
+        <small id="error-contrasena" class="mensaje-error"></small>
+      </div>
+      <button type="submit">Crear cuenta</button>
+      <p id="mensaje-exito" role="status"></p>
+    </form>
+  </main>
+  <footer class="pie-sitio">
+    <p>Proyecto académico · Desarrollo FullStack II</p>
+  </footer>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/registro.js"></script>
+</body>
+</html>
